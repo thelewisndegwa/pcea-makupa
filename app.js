@@ -51,6 +51,20 @@ var swiper = new Swiper(".mySwiper", {
     },
   });
 
-
+// Smooth scroll to the introduction section when clicking "Get Started"
+document.querySelectorAll('a[href^="#id_intro_container"]').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+  
+      const targetElement = document.querySelector(this.getAttribute('href'));
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop,
+          behavior: 'smooth' // Add smooth scroll behavior
+        });
+      }
+    });
+  });
+  
 
 navSlide();
