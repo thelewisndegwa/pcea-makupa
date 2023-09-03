@@ -8,12 +8,17 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Syne&display=swap');
     </style>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+  />
+  <link rel="icon" type="image/png" href="imgs/logo.jpg"/>
 </head>
 <body>
     <nav>
         <div class="logo">
             <a href="index.html"><img src="imgs/logo.jpg" alt="logo"/></a>
-            <a href="index.html"><h4 class="logoName">P.C.E.A Makupa</h4></a>
+            <h4 class="logoName">P.C.E.A Makupa</h4>
         </div>
         <ul class="nav-links">
             <li>
@@ -23,10 +28,10 @@
                 <a href="#">About Us</a>
             </li>
             <li>
-                <a href="#">Find Us</a>
+                <a href="#">Live</a>
             </li>
             <li>
-                <a href="#">Live</a>
+                <a href="#">Find Us</a>
             </li>
             <li>
                 <a href="#">Contact Us</a>
@@ -38,6 +43,40 @@
             <div class="line3"></div>
         </div>
     </nav>
+    <header>
+        <div class="container swiper mySwiper">
+            <div class="content swiper-wrapper">
+                <div class="slides swiper-slide">
+                    <img src="imgs/WhatsApp Image 2023-09-01 at 17.31.43.jpg" alt="church">
+                    <div class="img_overlay">
+                        <p>Welcome to</p>
+                        <h2>P.C.E.A Makupa</h2>
+                        <a href="#">Get Started</a>
+                    </div>
+                </div>
+                <div class="slides swiper-slide">
+                    <img src="imgs/WhatsApp Image 2023-09-01 at 17.31.36.jpg" alt="people singing 1">
+                    <div class="img_overlay">
+                        <p>Welcome to</p>
+                        <h2>P.C.E.A Makupa</h2>
+                        <a href="#">Get Started</a>
+                    </div>
+                </div>
+                <div class="slides swiper-slide">
+                    <img src="imgs/WhatsApp Image 2023-09-01 at 17.31.47.jpg" alt="people singing 2">
+                    <div class="img_overlay">
+                        <p>Welcome to</p>
+                        <h2>P.C.E.A Makupa</h2>
+                        <a href="#">Get Started</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next btn"></div>
+            <div class="swiper-button-prev btn"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </header>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="app.js"></script>
 </body>
 </html>

@@ -2,6 +2,7 @@
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+font-family: 'Syne', sans-serif;
 }
 
 nav {
@@ -76,7 +77,7 @@ nav {
     }
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:1024px){
     body{
         overflow-x: hidden;
     }
@@ -126,3 +127,125 @@ nav {
     transform: rotate(45deg)  translate(-5px,6px);
 }
 
+.container{
+    width: 100%;
+    height: 100vh;
+}
+.slides{
+    width: 100%;
+    height: 100%;
+}
+.slides::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    z-index: 9;
+}
+.slides img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.img_overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    width: 100%;
+    text-align: center;
+    z-index: 11;
+    color: white;
+    font-weight: 600;
+}
+.img_overlay p{
+    font-size: 2.5rem;
+    color:white;
+}
+.img_overlay h2{
+    font-size: 4.5rem;
+    letter-spacing: 5px;
+    color:white;
+}
+.img_overlay a{
+    text-decoration: none;
+    color: white;
+    padding: 0.8rem 2rem;
+    margin-top: 2rem;
+    border-radius: 4px;
+    background: blue;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+}
+.img_overlay a:hover{
+    background: green;
+}
+
+.btn{
+    background: rgba(0,0,0,0.6);
+    padding: 2rem;
+    color: white;
+    border-radius: 50%;
+}
+.btn::after{
+    color: white;
+}
+
+.swiper-button-next{
+    margin-right: 50px;
+}
+.swiper-button-prev{
+    margin-left: 50px;
+}
+
+@media(max-width: 900px){
+    .swiper-button-next{
+        margin-right: 20px;
+    }
+    .swiper-button-prev{
+        margin-left: 20px;
+    }
+    .img_overlay p{
+        font-size: 2rem;
+    }
+    .img_overlay h2{
+        font-size: 3.5rem;
+        letter-spacing: 5px;
+        color:white;
+    }
+    .img_overlay a{
+        text-decoration: none;
+        color: white;
+        padding: 0.6rem 1rem;
+        margin-top: 2rem;
+        border-radius: 4px;
+        background: blue;
+        transition: all 0.3s ease-in-out;
+        display: inline-block;
+    }
+}
+
+@media(max-width:768px){
+    .swiper-button-next{
+        margin-right: 10px;
+    }
+    .swiper-button-prev{
+        margin-left: 10px;
+    }
+    .img_overlay p{
+        font-size: 1.5rem;
+    }
+    .img_overlay h2{
+        font-size: 2.5rem;
+        letter-spacing: 5px;
+        color:white;
+    }
+
+}
+
+@media(max-width:600px){
+    .btn{
+        visibility: hidden;
+    }
+}
