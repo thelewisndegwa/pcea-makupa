@@ -303,6 +303,21 @@ nav {
     margin-bottom: 10px; /* Add space between paragraphs */
   }
   
+  .intro_paragraph_container a{
+    text-decoration: none;
+    color: white;
+    padding: 0.8rem 2rem;
+    margin-top: 2rem;
+    border-radius: 4px;
+    background: blue;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+}
+.intro_paragraph_container a:hover{
+    background: green;
+}
+
+
   /* Styles for screens with a width of 900px or less */
 @media (max-width: 900px) {
     .intro_container {
@@ -324,6 +339,9 @@ nav {
     .intro_paragraph_container p {
       font-size: 20px; /* Adjust the font size as needed */
     }
+    .intro_paragraph_container a {
+        padding: 0.6rem 1.5rem; /* Adjust button padding for smaller screens */
+      }
   }
   
   /* Styles for screens with a width of 768px or less */
@@ -344,4 +362,92 @@ nav {
       font-size: 20px; /* Adjust the font size as needed */
     }
     /* Add more styles as needed for 768px screens */
+
+    .intro_paragraph_container a {
+        padding: 0.5rem 1rem; /* Further reduce button padding for even smaller screens */
+      }
+  }
+
+ 
+.youtube_container {
+    position: relative;
+    margin-top: 20px; /* Add some space between sections */
+  }
+  
+  .youtube_container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .youtube_container::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.404);
+    z-index: 1;
+  }
+  
+  .youtube_overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+    color: white;
+    font-weight: 600;
+  }
+  
+  .youtube_overlay p {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 20px; /* Add space between text and button */
+  }
+  
+  .youtube_overlay a {
+    text-decoration: none;
+    color: white;
+    padding: 0.8rem 2rem;
+    margin-top: 10px; /* Add space between paragraphs and the button */
+    border-radius: 4px;
+    background: blue;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+  }
+  
+  .youtube_overlay a:hover {
+    background: green;
+  }
+
+  /* Media query for screens with a maximum width of 900px */
+@media (max-width: 900px) {
+    .youtube_container {
+      margin-top: 10px; /* Adjust margin for smaller screens */
+    }
+  
+    .youtube_overlay p {
+      font-size: 1rem; /* Reduce font size for smaller screens */
+    }
+    .youtube_overlay a {
+        padding: 0.6rem 1.5rem; /* Adjust button padding for smaller screens */
+        font-size: 0.9rem
+      }
+  }
+  
+  /* Media query for screens with a maximum width of 768px */
+  @media (max-width: 768px) {
+    .youtube_container {
+      margin-top: 4.5px; /* Further adjust margin for even smaller screens */
+    }
+  
+    .youtube_overlay p {
+      font-size: 0.7rem; /* Reduce font size for even smaller screens */
+    }
+    .youtube_overlay a {
+        padding: 0.5rem 1rem; /* Further reduce button padding for even smaller screens */
+        font-size: 0.8rem
+      }
   }
