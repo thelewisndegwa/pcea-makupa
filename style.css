@@ -399,6 +399,8 @@ nav {
     z-index: 2;
     color: white;
     font-weight: 600;
+    padding-left: 15%;
+    padding-right: 15%;
   }
   
   .youtube_overlay p {
@@ -451,3 +453,55 @@ nav {
         font-size: 0.8rem
       }
   }
+
+  .leader_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .card_container{
+    padding-block: 5rem;
+  }
+  .card_content{
+    margin-inline:1.75rem;
+    border-radius: 1.25rem;
+    overflow: hidden;
+  }
+  .card_article{
+    width: 300px;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    height: 600px;
+  }
+  .card_image{
+    position: relative;
+    background-color:beige;
+    padding-top: 1.5rem;
+    margin-bottom: -.75rem;
+    overflow: hidden;
+  }
+  .card_img{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    object-fit: cover
+    }
+.card_data{
+  background-color:blue;
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+.card_name{
+  font-size:large;
+  color:white;
+  margin-bottom: .75rem;
+}
+.card_description{
+  font-weight: 500;
+  margin-bottom: 1.75rem;
+}
