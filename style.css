@@ -371,7 +371,7 @@ nav {
  
 .youtube_container {
     position: relative;
-    margin-top: 20px; /* Add some space between sections */
+    margin-top: 5px; /* Add some space between sections */
   }
   
   .youtube_container img {
@@ -454,54 +454,151 @@ nav {
       }
   }
 
-  .leader_container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-  }
-  .card_container{
-    padding-block: 5rem;
-  }
-  .card_content{
-    margin-inline:1.75rem;
-    border-radius: 1.25rem;
-    overflow: hidden;
-  }
-  .card_article{
-    width: 300px;
-    border-radius: 1.25rem;
-    overflow: hidden;
-    height: 600px;
-  }
-  .card_image{
-    position: relative;
-    background-color:beige;
-    padding-top: 1.5rem;
-    margin-bottom: -.75rem;
-    overflow: hidden;
-  }
-  .card_img{
-    width: 100%;
-    margin: 0 auto;
-    position: relative;
-    z-index: 1;
-    object-fit: cover
-    }
-.card_data{
-  background-color:blue;
-  padding: 1.5rem 2rem;
-  border-radius: 1rem;
+/* CSS for the header "The Church Leaders" */
+
+.header {
   text-align: center;
-  position: relative;
-  z-index: 2;
+  font-size:xx-large;
+  margin: 20px 0; /* Add margin for spacing */
+  font-weight: bold; /* Optionally, make the header text bold */
 }
-.card_name{
-  font-size:large;
-  color:white;
-  margin-bottom: .75rem;
+
+/* Media query for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+  .header {
+    font-size: medium; /* Adjust font size for smaller screens */
+  }
 }
-.card_description{
-  font-weight: 500;
-  margin-bottom: 1.75rem;
+
+/* Media query for screens with a maximum width of 900px */
+@media (max-width: 900px) {
+  .header {
+    font-size: medium; /* Adjust font size for smaller screens */
+  }
+}
+
+/* CSS for the Cards */
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  flex: 1;
+  max-width: calc(50% - 20px); /* Two cards per row on smaller screens */
+  background-color: beige;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 10px; /* Adjust margin for smaller screens */
+  box-sizing: border-box;
+}
+
+.card img {
+  width: 100%;
+  height: 300px; /* Set the height for consistent image sizes */
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 16px;
+  color: black;
+  height: auto; /* Adjust height to allow content to expand */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-content h3 {
+  font-size: 20px; /* Adjust font size for smaller screens */
+  margin-bottom: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-content .btn1 {
+  display: inline-block;
+  padding: 6px 12px; /* Adjust button padding for smaller screens */
+  background-color: #333;
+  text-decoration: none;
+  border-radius: 4px;
+  color: #fff;
+  pointer-events: none;
+}
+
+/* Media query for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .card {
+    max-width: calc(50% - 20px); /* Two cards per row on smaller screens */
+    margin: 10px;
+  }
+
+  .card-content h3 {
+    font-size: 20px; /* Adjust font size for smaller screens */
+  }
+
+  .card-content .btn1 {
+    padding: 6px 12px; /* Adjust button padding for smaller screens */
+  }
+}
+
+/* Media query for screens with a maximum width of 900px */
+@media (max-width: 900px) {
+  .card-container {
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .card {
+    max-width: calc(50% - 20px); /* Two cards per row on smaller screens */
+    margin: 10px;
+  }
+
+  .card-content h3 {
+    font-size: 20px; /* Adjust font size for smaller screens */
+  }
+
+  .card-content .btn1 {
+    padding: 6px 12px; /* Adjust button padding for smaller screens */
+  }
+}
+
+
+.service-time {
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 5px;
+}
+
+.container1 {
+  display: flex;
+  justify-content: center;
+}
+
+.service-box {
+  margin: 0 20px;
+  text-align: center;
+}
+
+.service-box i {
+  font-size: 3rem; /* Increased font size */
+  margin-bottom: 10px;
+}
+
+.service-box h3 {
+  font-size: 1.5rem; /* Increased font size */
+}
+.service-box h4 {
+  font-size: 1rem; /* Increased font size */
 }

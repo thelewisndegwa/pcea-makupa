@@ -14,6 +14,8 @@
   />
   <link rel="icon" type="image/png" href="imgs/logo.jpg"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
 </head>
 <body>
     <nav>
@@ -26,7 +28,7 @@
                 <a href="#">Home</a>
             </li>
             <li>
-                <a href="#">About Us</a>
+                <a href="about_us.html">About Us</a>
             </li>
             <li>
                 <a href="#youtube">Live</a>
@@ -98,10 +100,31 @@
                  use Lorem Ipsum as their</p>
 
                  <!-- button to be taken to learn more page -->
-                 <a href="#">Learn More</a>
+                 <a href="about_us.html">Learn More</a>
         </div>
         
     </div>
+
+    <h1 class="header">Service Times</h1>
+    <section class="service-time">
+        <div class="container1">
+            <div class="service-box">
+                <i class="far fa-clock fa-3x"></i>
+                <h3>8:30am</h3>
+                <h4>English</h4>
+            </div>
+            <div class="service-box">
+                <i class="far fa-clock fa-3x"></i>
+                <h3>10:00am</h3>
+                <h4>Deaf</h4>
+            </div>
+            <div class="service-box">
+                <i class="far fa-clock fa-3x"></i>
+                <h3>10:45am</h3>
+                <h4>Kiswahili</h4>
+            </div>
+        </div>
+    </section>
 
     <div id="youtube" class="youtube_container">
         <img src="imgs/WhatsApp Image 2023-09-01 at 17.32.101.jpg" alt="praise and worship">
@@ -115,62 +138,44 @@
         </div>
     </div>
 
-    <h1 style="text-align: center; font-size:large;">The Church Leaders</h1>
-    <section class="leader_container">
-        
-        <div class="card_container">
-            <div class="card_content">
-                <div>
-                    <article class="card_article">
-                        <div class="card_image">
-                            <img src="imgs/HIRAM REV.PNG" alt="Parish Minister" class="card_img">
-                        </div>
+    <h1 class="header">The Church Leaders</h1>
 
-                        <div class="card_data">
-                            <h2 class="card_name">Rev. Hiram Githaiga</h2>
-                            <h3 class="card_description">Parish Minister</h3>
-                        </div>
-                    </article>
-
-                    <article class="card_article">
-                        <div class="card_image">
-                            <img src="imgs/WhatsApp Image 2023-09-04 at 12.29.37.jpg" alt="Chairman" class="card_img">
-                          
-                        </div>
-
-                        <div class="card_data">
-                            <h2 class="card_name">Elder Amos Kimani</h2>
-                            <h3 class="card_description">Chairman</h3>
-                        </div>
-                    </article>
-
-                    <article class="card_article">
-                        <div class="card_image">
-                            <img src="imgs/WhatsApp Image 2023-09-04 at 12.32.39.jpg" alt="Registrar" class="card_img">
-                            
-                        </div>
-
-                        <div class="card_data">
-                            <h2 class="card_name">Amos Ndegwa</h2>
-                            <h3 class="card_description">Registrar</h3>
-                        </div>
-                    </article>
-
-                    <article class="card_article">
-                        <div class="card_image">
-                            <img src="imgs/WhatsApp Image 2023-09-05 at 11.25.52.jpg" alt="Treasurer" class="card_img">
-                            
-                        </div>
-
-                        <div class="card_data">
-                            <h2 class="card_name">Leonard Mwangi</h2>
-                            <h3 class="card_description">Treasurer</h3>
-                        </div>
-                    </article>
-                </div>
+    <div class="card-container">
+        <div class="card">
+            <img src="imgs/HIRAM REV.PNG" alt="Parish Minister">
+            <div class="card-content">
+                <h3>Rev. Hiram Githaiga</h3>     
+                <a href="" class="btn1">Parish Minister</a> 
             </div>
         </div>
-    </section>
+
+        <div class="card">
+            <img src="imgs/WhatsApp Image 2023-09-04 at 12.29.37.jpg" alt="Chairman">
+            <div class="card-content">
+                <h3>Elder Amos Kimani</h3>     
+                <a href="" class="btn1">Chairman</a> 
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="imgs/WhatsApp Image 2023-09-04 at 12.32.39.jpg" alt="Registrar">
+            <div class="card-content">
+                <h3>Amos Ndegwa</h3>     
+                <a href="" class="btn1">Registrar</a> 
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="imgs/WhatsApp Image 2023-09-05 at 11.25.52.jpg" alt="Treasurer">
+            <div class="card-content">
+                <h3>Leonard Mwangi</h3>     
+                <a href="" class="btn1">Treasurer</a> 
+            </div>
+        </div>
+    </div>
+
+   
+
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="app.js"></script>
