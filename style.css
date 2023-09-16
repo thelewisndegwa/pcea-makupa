@@ -545,7 +545,7 @@ nav {
   }
 
   .card-content h3 {
-    font-size: 20px; /* Adjust font size for smaller screens */
+    font-size: 10px; /* Adjust font size for smaller screens */
   }
 
   .card-content .btn1 {
@@ -566,7 +566,7 @@ nav {
   }
 
   .card-content h3 {
-    font-size: 20px; /* Adjust font size for smaller screens */
+    font-size: 15px; /* Adjust font size for smaller screens */
   }
 
   .card-content .btn1 {
@@ -601,4 +601,196 @@ nav {
 }
 .service-box h4 {
   font-size: 1rem; /* Increased font size */
+}
+
+
+ 
+ .map_container {
+  position: relative;
+  margin-top: 5px; 
+}
+
+.map_container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.map_container::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.404);
+  z-index: 1;
+}
+
+.map_overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+  color: white;
+  font-weight: 600;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.map_overlay p {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 20px; 
+}
+
+.map_overlay a {
+  text-decoration: none;
+  color: white;
+  padding: 0.8rem 2rem;
+  margin-top: 10px; 
+  border-radius: 4px;
+  background: blue;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+}
+
+.map_overlay a:hover {
+  background: green;
+}
+
+.actual_map{
+  float: left;
+}
+
+
+/* Media query for screens with a maximum width of 900px */
+@media (max-width: 900px) {
+  .map_container {
+    margin-top: 7px;
+  }
+
+  .map_container img {
+    width: 100%;
+  }
+
+  .map_overlay p {
+    font-size: 0.7rem;
+  }
+
+  .map_overlay a {
+    padding: 0.5rem 1rem;
+    font-size: 0.7rem;
+    margin-bottom: 10px;
+  }
+
+  .actual_map iframe {
+    width: 70%;
+    height: 120px; /* Adjust the height as needed */
+    margin-top: 10px;
+  }
+}
+
+/* Media query for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+  .map_container {
+    margin-top: 4.5px;
+  }
+
+  .map_overlay p {
+    font-size: 0.7rem;
+  }
+
+  .map_overlay a {
+    padding: 0.5rem 1rem;
+    font-size: 0.7rem;
+    margin-bottom: 10px;
+  }
+
+  .actual_map iframe {
+    width: 70%;
+    height: 120px; /* Adjust the height as needed */
+    margin-top: 10px;
+  }
+}
+
+
+
+footer{
+  width: 100%;
+  padding: 50px 0px;
+  background-image: url(../Images/background-footer.svg);
+  background-size: cover;
+  
+  /*background-color: #d0f0f8;
+  -webkit-mask-image: url("../Images/background-footer.svg");
+  mask-image: url("../Images/background-footer.svg");
+  -webkit-mask-size: cover;
+  mask-size: cover;*/
+}
+
+.container__footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.box__footer{
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.box__footer .logo img{
+  width: 180px;
+}
+
+.box__footer .terms{
+  max-width: 350px;
+  margin-top: 20px;
+  font-weight: 500;
+  color: #7a7a7a;
+  font-size: 18px;
+}
+
+.box__footer h2{
+  margin-bottom: 30px;
+  color: #343434;
+  font-weight: 700;
+}
+
+.box__footer a{
+  margin-top: 10px;
+  color: #7a7a7a;
+  font-weight: 600;
+}
+
+.box__footer a:hover{
+  opacity: 0.8;
+}
+
+.box__footer a .fab{
+  font-size: 20px;
+}
+
+.box__copyright{
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  padding: 0px 40px;
+}
+
+.box__copyright p{
+  margin-top: 20px;
+  color: #7a7a7a;
+}
+
+.box__copyright hr{
+  border: none;
+  height: 1px;
+  background-color: #7a7a7a;
 }
