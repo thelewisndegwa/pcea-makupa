@@ -575,6 +575,13 @@ nav {
 }
 
 
+#service-xx{
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 5px;
+  font-size: 30px;
+    font-weight: 600;
+}
 .service-time {
   text-align: center;
   padding: 20px 0;
@@ -746,7 +753,8 @@ footer{
 }
 
 .box__footer .logo img{
-  width: 180px;
+  width: 100%;
+  height: 100%;
 }
 
 .box__footer .terms{
@@ -794,3 +802,17 @@ footer{
   height: 1px;
   background-color: #7a7a7a;
 }
+
+/* @media (max-width: 900px) {
+  .box__footer .logo img{
+   display: none;
+  }
+}
+
+/* Media query for screens with a maximum width of 768px */
+/* @media (max-width: 768px) {
+  .box__footer .logo img{
+    display: none;
+}
+} */ 
+

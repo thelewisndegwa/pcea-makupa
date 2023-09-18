@@ -1,0 +1,123 @@
+.core_values h3{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    color: blue;
+  }
+
+  .core_values p{
+    font-size:20px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+.vision h3{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    color: blue;
+  }
+
+  .vision p{
+    font-size:20px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+.mission h3{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    color: blue;
+  }
+
+  .mission p{
+    font-size:20px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+.ministries{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+  .ministries h3{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    color: blue;
+  }
+
+  .ministries ul li{
+    font-size:20px;
+  }
+
+  .ministry-columns {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20%;
+}
+
+.column {
+    flex: 1;
+    padding: 0 10px;
+}
+
+ul {
+    list-style-type: disc; /* Use 'disc' for bullet points */
+    padding-left: 20px; /* Add some left padding for bullets */
+}
+
+.districts{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+  .districts h3{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    color: blue;
+  }
+
+  .district-columns {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20%;
+}
+
+.column1 {
+    flex: 1;
+    padding: 0 10px;
+}
+
+.column1 ul {
+    list-style-type: disc; /* Use 'disc' for bullet points */
+    padding-left: 5px; /* Adjust the left padding to reduce spacing */
+    margin-top: 5px; /* Add a small margin at the top of the list */
+}
+.districts ul li{
+    font-size:20px;
+  }
+
+
+  /* Media query for screens with a maximum width of 900px */
+@media (max-width: 900px) {
+    .districts{
+        padding-left: 0%;
+        padding-right: 10%;
+    }
+    .ministries{
+        padding-left: 0%;
+        padding-right: 10%;
+    }
+     
+  }
+  
+  /* Media query for screens with a maximum width of 768px */
+  @media (max-width: 768px) {
+    .districts{
+        padding-left: 0%;
+        padding-right: 10%;
+    }
+    .ministries{
+        padding-left: 0%;
+        padding-right: 10%;
+    }
+  }
