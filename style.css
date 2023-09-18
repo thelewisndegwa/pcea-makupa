@@ -834,3 +834,35 @@ footer{
 #myBtn:hover {
   background-color: black; /* Add a dark-grey background on hover */
 }
+
+@media (max-width: 768px) {
+  #myBtn {
+    right: 20px; /* Adjust position for smaller screens */
+    padding: 10px; /* Reduce padding for mobile */
+    font-size: 14px; /* Reduce font size for mobile */
+  }
+
+  #myBtn:hover {
+    background-color: darkgrey; /* Add a lighter background on hover for mobile */
+  }
+}
+
+/* Style for the "Other Leaders" button */
+.other-leaders-button {
+  text-align: center;
+  margin-top: 20px; /* Adjust the margin as needed */
+  margin-bottom: 20px;
+}
+
+.btn-blue {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+.btn-blue:hover {
+  background-color: green;
+}

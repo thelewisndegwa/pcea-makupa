@@ -109,6 +109,20 @@ document.querySelectorAll('a[href^="#id_intro_container"]').forEach(link => {
     });
   });
 
+  document.querySelectorAll('a[href^="#leaders_church"]').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+  
+      const targetElement = document.querySelector(this.getAttribute('href'));
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop,
+          behavior: 'smooth' // Add smooth scroll behavior
+        });
+      }
+    });
+  });
+
 navSlide();
 
 
