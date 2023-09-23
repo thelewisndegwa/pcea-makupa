@@ -78,34 +78,37 @@ nav {
 }
 
 @media screen and (max-width:1024px){
-    body{
-        overflow-x: hidden;
-    }
-    .nav-links{
-        position: absolute;
-        right: 0px;
-        height: 92vh;
-        top: 8vh;
-        background-color:rgb(48, 48, 226) ;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 50%;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in;
-        z-index: 3;
-    }
-    .nav-links li{
-        opacity: 0;
-    }
-    .burger{
-        display: block;
-    }
+  body{
+      overflow-x: hidden;
+  }
+  .nav-links{
+      position: absolute;
+      top: 8vh;
+      right: -100%; /* Initially hide the menu off-screen */
+      background-color: rgb(48, 48, 226);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+      z-index: 3;
+      transition: right 0.5s ease-in; /* Use right property for animation */
+      align-items: center;
+      margin-top: 30px;
+  }
+  .nav-links li{
+      opacity: 0;
+      padding: 10px; 
+      margin-bottom: 10px;
+  }
+  .burger{
+      display: block;
+  }
 }
 
 .nav-active{
-    transform: translateX(0%);
+  right: 0; /* Slide the menu in */
 }
+
 
 @keyframes navLinkFade{
     from{
