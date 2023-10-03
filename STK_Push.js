@@ -5,14 +5,16 @@ document.addEventListener('DOMContentLoaded', function () {
     paymentForm.addEventListener('submit', function (event) {
         event.preventDefault();
 
-        const phone = document.getElementById('phone').value;
-        const amount = document.getElementById('amount').value;
+        // Get values from the form
+        const phone = document.querySelector('input[name="phone"]').value;
+        const amount = document.querySelector('input[name="amount"]').value;
+        const district = document.querySelector('select[name="district"]').value; // Add this line
 
         // Call the function to initiate the STK Push payment
-        initiateSTKPushPayment(phone, amount);
+        initiateSTKPushPayment(phone, amount, district); // Pass the district as an argument
     });
 
-    function initiateSTKPushPayment(phone, amount) {
+    function initiateSTKPushPayment(phone, amount, district) {
         const apiKey = 'AGTmbtGZjzPFGyAWKNjHwxT98Gj4x1MQ'; // Replace with your Daraja API Key
         const shortCode = '503466'; // Replace with your M-Pesa Paybill or Till Number
         const passkey = 'YOUR_PASSKEY'; // Replace with your Daraja API Passkey
@@ -35,6 +37,8 @@ document.addEventListener('DOMContentLoaded', function () {
             CallBackURL: callbackUrl,
             AccountReference: 'Payment',
             TransactionDesc: 'Payment for Services',
+            // Add District to the request data
+            District: district,
         };
 
         fetch(endpoint, {
