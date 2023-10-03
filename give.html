@@ -6,6 +6,7 @@
     <title>P.C.E.A Makupa</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="give.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Syne&display=swap');
     </style>
@@ -58,7 +59,48 @@
 
 
 
-
+    <div class="container">
+        <img src="imgs/images-6.jpeg" alt="M-Pesa Image"> 
+        <h1>Give Offerings</h1>
+        <form action="submit_offering.php" method="post"> <!-- Replace with your form submission URL -->
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" name="amount" required>
+            </div>
+            <div class="form-group">
+                <label for="district">District:</label>
+                <select id="district" name="district">
+                    <option value="Migadini">Migadini</option>
+                    <option value="Changamwe South">Changamwe South</option>
+                    <option value="Changamwe North">Changamwe North</option>
+                    <option value="Makupa">Makupa</option>
+                    <option value="Tudor">Tudor</option>
+                    <option value="Buxton">Buxton</option>
+                    <option value="Town Centre">Town Centre</option>
+                    <option value="Shimanzi">Shimanzi</option>
+                    <option value="Nyali Centre">Nyali Centre</option>
+                    <option value="Nyali North">Nyali North</option>
+                    <option value="Nyali South">Nyali South</option>
+                    <option value="Mshomoroni">Mshomoroni</option>
+                    <option value="Kiembeni">Kiembeni</option>
+                    <option value="Leisure">Leisure</option>
+                </select>              
+                
+                
+                
+                
+                
+                
+            </div>
+            <div class="form-group">
+                <button type="submit" class="give-button">Give</button>
+            </div>
+        </form>
+    </div>
 
 
 

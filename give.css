@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif; /* Use your preferred font */
+    background-color: #f0f0f0; /* Background color similar to your website's theme */
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff; /* Form background color similar to your website's theme */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    margin-top: -20px; /* Adjust the margin as needed */
+}
+
+h1 {
+    color: #333; /* Heading color similar to your website's theme */
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333; /* Label text color similar to your website's theme */
+}
+
+input[type="tel"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button.give-button {
+    background-color: rgb(48, 48, 226); /* Button background color similar to your website's theme */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button.give-button:hover {
+    background-color: #333; /* Button hover color similar to your website's theme */
+}
